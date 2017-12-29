@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LoginSystem</title>
+	</head>
+	<body>
+		<p>What is the word?</p>
+		<p><input type="text" id="input"></p>
+		<p><button id="checkMagicWord">Enter</button></p>
+		
+		<script type="text/javascript">
+			document.getElementById("checkMagicWord").onclick = function(){
+				var magicWordEntered = document.getElementById("input").value;
+				var magicWord = "Password";
+				if (magicWordEntered == magicWord){
+					alert("you got it!")
+				} else {
+					alert("try again!")
+				}
+			}
+		</script>
+	</body>
+</html>

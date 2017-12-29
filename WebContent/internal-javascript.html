@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+				
+		<title>InternalJavascript</title>
+	</head>
+	<body>
+		<p id="text">HelloWorld</p>
+		<button id="myButton">Change text</button>
+		<script type="text/javascript">
+			document.getElementById("myButton").onclick = function() {
+				document.getElementById("text").innerHTML = "Hello User!";
+			}
+		//	document.getElementById("text").innerHTML = "Hello Nate!";
+		</script>
+		<!-- <script> can go into the <head> as well, but it won't affect the body of the page -->
+	</body>
+</html>
